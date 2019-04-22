@@ -26,6 +26,48 @@ These are the goals, not where it is at today:
 - [ ] Real-time [search][search] on the static pages
 - [ ] Static stand-alone Pages - [Artsy x React Native][x-rn]
 
+# Aim
+
+You as a user would have a blog with a `blog` folder, in that folder you could have:
+
+```sh
+$ tree blog
+
+[...] # Your gatsby stuff
+content/
+├── assets
+│   ├── gatsby-icon.png
+│   └── profile-pic.jpg
+├── blog
+│   ├── archives
+│   │   ├── 2011-12-25-creating-rebase.md
+│   │   ├── 2011-12-26-the-godaddy-kerfuffle.md
+│   │   └── 2011-12-27-barriers-of-entry-to-photography.md
+│   ├── my-first-post
+│   │   ├── index.mdx
+│   │   └── hello-world.jpg
+│   └── my-second-post
+│       └── index.mdx
+│   
+└── pages
+   └── cool-lib
+        └── index.mdx
+```
+
+Should generate the following resources:
+
+```
+/assets/gatsby-icon.png
+/assets/profile-pic.jpg
+/blog/creating-rebase/index.html
+/blog/the-godaddy-kerfuffle/index.html
+/blog/barriers-of-entry-to-photography/index.html
+/blog/my-first-post/index.html
+/blog/my-first-post/hello-world.jpg
+/blog/my-second-post/index.html
+/cool-lib/index.html
+```
+
 
 [themes]: https://medium.com/@kyle.robert.gill/a-simple-guide-to-gatsbyjs-themes-a4f9765c5ac7
 [author]: /author/orta/
