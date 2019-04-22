@@ -68,6 +68,20 @@ Should generate the following resources:
 /cool-lib/index.html
 ```
 
+## How do I contribute?
+
+Right now we have the above TODO list. You can clone this repo, run `yarn install` and start trying to build out some 
+of the features in that list into the main site. We can figure out how to transform it into a theme once themes are 
+more stable.
+
+```sh
+git clone https://github.com/and-hyde gatsby-and-hyde
+cd gatsby-and-hyde
+cd example
+yarn install
+yarn start
+```
+
 
 [themes]: https://medium.com/@kyle.robert.gill/a-simple-guide-to-gatsbyjs-themes-a4f9765c5ac7
 [author]: /author/orta/
