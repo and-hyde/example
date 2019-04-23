@@ -75,7 +75,7 @@ of the features in that list into the main site. We can figure out how to transf
 more stable.
 
 ```sh
-git clone https://github.com/and-hyde gatsby-and-hyde
+git clone https://github.com/and-hyde/example.git gatsby-and-hyde
 cd gatsby-and-hyde
 cd example
 yarn install
