@@ -1,4 +1,3 @@
-import { createFilePath } from "gatsby-source-filesystem"
 import { GatsbyNode } from "gatsby"
 
 const path = require(`path`)
@@ -33,7 +32,7 @@ export const createPages: GatsbyNode["createPages"] = ({ graphql, actions }) => 
     }
 
     // @ts-ignore
-    const posts = result.data.allMarkdownRemark.edges
+    const posts: any[] = result.data.allMarkdownRemark.edges
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
