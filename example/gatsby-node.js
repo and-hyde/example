@@ -34,19 +34,12 @@ exports.createPages = ({ graphql, actions }) => {
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
-      const slug = post.node.fields.slug
-
-      // "/archives/2011-12-25-creating-rebase/" => "creating-rebase"
-      const getSlugFromArchive = (path) => path.split("-").shift().shift().shift().join("-")
-      const isArchive = slug.includes("/archives") 
-      
-      const pageSlug = isArchive ? getSlugFromArchive(slug) : slug
 
       createPage({
-        path: pageSlug,
+        path: post.node.fields.slug,
         component: blogPost,
         context: {
-          slug: pageSlug,
+          slug: post.node.fields.slug,
           previous,
           next,
         },

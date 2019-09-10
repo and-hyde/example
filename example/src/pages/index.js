@@ -6,15 +6,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-export default function BlogIndex() {
-  const { data } = props
+export default function BlogIndex(props) {
+  const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
 
   const isModernPost = (f) => !f.node.fields.slug.includes("archives/")
   const posts = data.allMarkdownRemark.edges.filter(isModernPost)
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SEO
         title="All posts"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
