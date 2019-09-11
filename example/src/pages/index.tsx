@@ -47,7 +47,7 @@ export default function BlogIndex(props) {
 }
 
 export const pageQuery = graphql`
-  query {
+  query Index {
     site {
       siteMetadata {
         title
