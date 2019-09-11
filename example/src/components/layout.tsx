@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
+declare const  __PATH_PREFIX__: string;
+
 import { rhythm, scale } from "../utils/typography"
 
-export default function Layout(props) {
+export default function Layout(props: any) {
   const { location, title, children } = props
   const rootPath = `${__PATH_PREFIX__}/`
   let header
