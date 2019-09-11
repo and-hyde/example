@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "and-hyde-examples",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "An example blog for and-hyde",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/and-hyde/example"
   },
   "dependencies": {
     "@babel/core": "^7.6.0",
@@ -50,7 +50,7 @@
   "resolutions": {
     "@types/react": "16.9.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/and-hyde/example#readme",
   "keywords": [
     "gatsby"
   ],
@@ -58,7 +58,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/and-hyde/example.git"
   },
   "scripts": {
     "build": "gatsby build",
@@ -67,6 +67,5 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
