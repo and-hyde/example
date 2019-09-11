@@ -44,6 +44,7 @@ content/
 │   │   ├── 2011-12-25-creating-rebase.md
 │   │   ├── 2011-12-26-the-godaddy-kerfuffle.md
 │   │   └── 2011-12-27-barriers-of-entry-to-photography.md
+│   ├── my-zeroth-post.markdown
 │   ├── my-first-post
 │   │   ├── index.mdx
 │   │   └── hello-world.jpg
@@ -63,6 +64,7 @@ Should generate the following resources:
 /blog/creating-rebase/index.html
 /blog/the-godaddy-kerfuffle/index.html
 /blog/barriers-of-entry-to-photography/index.html
+/blog/my-zeroth-post/index.html
 /blog/my-first-post/index.html
 /blog/my-first-post/hello-world.jpg
 /blog/my-second-post/index.html
