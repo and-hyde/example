@@ -9,15 +9,16 @@ There is a high-level goal of supporting all of the features that have been buil
 
 # This Repo
 
-This repo serves as the example blog for development of the system. Once [gatsby-themes][themes] becomes stable then 
-it can be turned into a theme instead.
+This repo serves as the example blog for development of the system. We can build out the blog generically, then switch
+it to be a  [gatsby-themes][themes] so that anyone can base their blog on it.
 
-# Features
+# Features TODO
 
 These are the goals, not where it is at today:
 
-- [ ] TypeScript support
-- [ ] Archived pages
+- [x] TypeScript support
+- [x] TS Types for queries
+- [x] Archived pages
 - [ ] Author pages - [mine][author]
 - [ ] Category pages - [GraphQL][graphql]
 - [ ] Site series - [React Native at Artsy][rnaa]
@@ -79,6 +80,7 @@ git clone https://github.com/and-hyde/example.git gatsby-and-hyde
 cd gatsby-and-hyde
 cd example
 yarn install
+yarn type-check
 yarn start
 ```
 

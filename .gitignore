@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+example/schema.json
+example/__generated__
+example/apollo.config.js
